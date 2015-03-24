@@ -12,4 +12,8 @@ Updated in this version:
 
 - Updated URL for NOAA D-Region Absorption Prediction
 
+New in version 1.0:
+
+- Added N3KL X-Ray and Geomag info
+- Added NOAA DRAP
 
