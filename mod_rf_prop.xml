@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension method="upgrade" client="site" version="3.2" type="module">
+	<name>RF Propagations</name>
+	<creationDate>March 2015</creationDate>
+	<author>T Kuykendall NK4I</author>
+	<copyright>Copyright (C) 2015 T Kuykendall NK4I</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>tk@nk4i.com</authorEmail>
+	<authorUrl>www.NK4I.com</authorUrl>
+	<version>1.1</version>
+	<description>Radio Frequency Propagations</description>
+	<files>
+		<filename>mod_rf_prop.xml</filename>
+		<filename module="mod_rf_prop">mod_rf_prop.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_rf_prop.ini</language>
+		<language tag="en-GB">en-GB.mod_rf_prop.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_RF_PROPAGATIONS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="align"
+					type="list"
+					default="2"
+					label="Alignment"
+					description="Alignment">
+					<option value="1">Left</option>
+					<option value="2">Center</option>
+					<option value="3">Right</option>
+				</field>
+				<field
+					name="xray"
+					type="radio"
+					default="1"
+					label="Display Solar X-rays"
+					description="Display Solar X-rays">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="geomag"
+					type="radio"
+					default="1"
+					label="Display Geomagnetic field"
+					description="Display Geomagnetic field">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="d_region"
+					type="radio"
+					default="1"
+					label="Display D-Region Absorption Prediction"
+					description="Display D-Region Absorption Prediction">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="bands"
+					type="radio"
+					default="1"
+					label="Display Band Conditions"
+					description="Display Band Conditions">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="sunspots"
+					type="radio"
+					default="1"
+					label="Display Sun Spots"
+					description="Display Sun Spots">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="created_by"
+					type="radio"
+					default="1"
+					label="Display Created By"
+					description="Display Created By">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
