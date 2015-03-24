@@ -7,7 +7,7 @@
 	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<authorEmail>tk@nk4i.com</authorEmail>
 	<authorUrl>www.NK4I.com</authorUrl>
-	<version>1.1</version>
+	<version>1.2</version>
 	<description>Radio Frequency Propagations</description>
 	<files>
 		<filename>mod_rf_prop.xml</filename>
