@@ -10,8 +10,18 @@
  * @license		GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
 **/
  
-// no direct access
+// No direct access to this file
 defined( '_JEXEC' ) or die( 'Restricted access' );
+
+// Get an instance of the controller
+$controller = JControllerLegacy::getInstance( 'mod_rf_prop');
+
+// Perform the Requested task
+$input = JFactory::getApplication()->input;
+$controller->execute($input->getCmd('task'));
+
+// Redirect if set by the controller
+$controller->redirect();
 
 require_once( dirname(__FILE__).'/helper.php' );
  
